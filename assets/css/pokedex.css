@@ -146,6 +146,44 @@
     border-radius: 1rem;
 }
 
+.modal {
+    display: flex; /* Garante que o modal se torna visível */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Garante que o modal esteja acima dos outros elementos */
+}
+
+.hidden {
+    display: none !important; /* Garante que o modal esteja escondido inicialmente */
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
